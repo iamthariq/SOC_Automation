@@ -44,7 +44,9 @@ The Wazuh Agent is configured to collect Sysmon Operational events from the Wind
 </localfile>
 ```
 > Restart Wazuh Agent
+
 > Restart-Service -Name Wazuh
+
 ## Evidence
 ![Sysmon Wazuh Agent Integration](02-sysmon-agent-config.png)
 
