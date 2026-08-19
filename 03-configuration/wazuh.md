@@ -13,7 +13,7 @@ Install Wazuh Server, Indexer and Dashboard
 sudo bash ./wazuh-install.sh -a
 ```
 
-This is the official all-in-one installation method. It installs the Wazuh server/manager, Wazuh indexer and Wazuh dashboard on the same host.
+> This is the official all-in-one installation method. It installs the Wazuh server/manager, Wazuh indexer and Wazuh dashboard on the same host.
 
 Check Wazuh Manager
 ```
@@ -36,7 +36,7 @@ To Open dashboard - Use this format in your browser:
 https://YOUR_WAZUH_SERVER_IP
 ```
 
-The installer displays the admin password when installation finishes. Wazuh also stores the generated passwords in wazuh-passwords.txt inside the installation archive.
+> The installer displays the admin password when installation finishes. Wazuh also stores the generated passwords in wazuh-passwords.txt inside the installation archive.
 
 
 ## Wazuh Agent — Windows
