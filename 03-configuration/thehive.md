@@ -1,4 +1,4 @@
-# TheHive 5 — SOC Case Management Server
+# TheHive 5 — SOC Case Management Server in docker (ubuntu)
 ## Update Ubuntu
 ```
 sudo apt update && sudo apt upgrade -y
