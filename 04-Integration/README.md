@@ -4,33 +4,7 @@ This section documents the integrations used to connect the endpoint, SIEM, SOAR
 
 ---
 
-# 01. Wazuh Agent → Wazuh Manager
-
-The Wazuh Agent is registered with the Wazuh Manager using the Manager IP address so that endpoint security events can be forwarded to the central Wazuh server.
-
-### Wazuh Agent Manager Configuration
-
-> Add the Wazuh Manager address to the Wazuh Agent configuration:
-
-```xml
-<client>
-    <server>
-        <address>WAZUH_MANAGER_IP</address>
-    </server>
-</client>
-```
-## Replace:
-```
-WAZUH_MANAGER_IP
-```
-> with the Wazuh Manager IP address used in the lab.
-> Restart Wazuh Agent
-> Restart-Service -Name Wazuh
-
-## Evidence
-![Wazuh Agent Manager Integration](01-wazuh-agent-manager.png)
-
-# 02. Sysmon → Wazuh Agent
+# 01. Sysmon → Wazuh Agent
 
 The Wazuh Agent is configured to collect Sysmon Operational events from the Windows endpoint.
 
@@ -50,7 +24,7 @@ The Wazuh Agent is configured to collect Sysmon Operational events from the Wind
 ## Evidence
 ![Sysmon Wazuh Agent Integration](02-sysmon-agent-config.png)
 
-# 03. Wazuh Manager → Shuffle SOAR
+# 02. Wazuh Manager → Shuffle SOAR
 
 Wazuh Manager is integrated with Shuffle SOAR through a webhook so that selected security alerts can be automatically forwarded to the SOAR workflow.
 
@@ -75,7 +49,7 @@ sudo systemctl restart wazuh-manager
 ![Wazuh Shuffle Integration](03-wazuh-shuffle.png)
 
 
-# 04. Wazuh Custom Detection Rules (Mimikatz detection in project)
+# 03. Wazuh Custom Detection Rules (Mimikatz detection in project)
 
 Custom Wazuh rules are used to detect security events relevant to the SOC detection scenarios.
 
@@ -101,7 +75,7 @@ sudo systemctl restart wazuh-manager
 ## Evidence
 ![Wazuh Custom Mimikatz Detection](06-wazuh-custom-mimikatz.png)
 
-# 05. Shuffle SOAR → VirusTotal
+# 04. Shuffle SOAR → VirusTotal
 
 VirusTotal is integrated with the Shuffle SOAR workflow to enrich relevant indicators with threat-intelligence information.
 
@@ -111,7 +85,7 @@ The integration is configured through the Shuffle web interface.
 ![VirusTotal Integration](04-virustotal-integration.png)
 
 
-# 06. Shuffle SOAR → TheHive
+# 05. Shuffle SOAR → TheHive
 
 TheHive is integrated with the Shuffle SOAR workflow for automated security alert and case management.
 
