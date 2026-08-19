@@ -93,3 +93,11 @@ The integration is configured through the Shuffle web interface.
 
 ## Evidence
 ![TheHive Integration](05-thehive-integration.png)
+
+## 06. SOC Automation Workflow
+
+The integrated workflow connects Wazuh detection, Shuffle SOAR automation, VirusTotal enrichment, and TheHive case management.
+
+## Evidence
+
+![SOC Automation Workflow](06-shuffle-workflow.png)
