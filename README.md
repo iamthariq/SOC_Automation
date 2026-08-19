@@ -45,9 +45,9 @@ The workflow demonstrates:
 
 ## ⚡ SOC Automation Flow
 
-
-
 <div align="center">
+![Shuffle SOAR Workflow](06-shuffle-workflow.png)
+
 
 ```text
 ┌──────────────────────┐
