@@ -58,7 +58,8 @@ The custom rules are stored in the Wazuh Manager local rules file.
 ## Open Local Rules
 ```
 sudo nano /var/ossec/etc/rules/local_rules.xml
-
+```
+```
 <!-- Mimikatz execution detection rule -->
 <rule id="YOUR_RULE_ID" level="YOUR_LEVEL">
     <!-- Add the actual rule conditions used in the lab -->
