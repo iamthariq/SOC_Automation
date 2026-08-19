@@ -1,4 +1,4 @@
-## Wazuh Server — Ubuntu
+# Wazuh Server — Ubuntu
 
 Update the Ubuntu system
 ```
@@ -28,9 +28,8 @@ Check Wazuh Dashboard
 sudo systemctl status wazuh-dashboard
 ```
 Find the server IP
-```
-ip addr
-```
+`ip addr`
+
 To Open dashboard - Use this format in your browser:
 ```
 https://YOUR_WAZUH_SERVER_IP
@@ -38,30 +37,38 @@ https://YOUR_WAZUH_SERVER_IP
 
 > The installer displays the admin password when installation finishes. Wazuh also stores the generated passwords in wazuh-passwords.txt inside the installation archive.
 
+# Wazuh Agent — Windows
 
-## Wazuh Agent — Windows
+## Download and install:
 
-Download the Wazuh Agent
+`wazuh-agent-4.14.7-1.msi`
 
-wazuh-agent-4.14.7-1.msi
+## Open PowerShell as Administrator
 
-Open PowerShell as Administrator & Go to the directory containing the MSI:
-```
+> Go to the directory containing the MSI:
+
+```powershell
 cd $env:USERPROFILE\Downloads
 ```
-Install the Agent and point it to your Wazuh Server by replace xxx.xxx.xxx with your actual Wazuh Server IP.
+> Configure Wazuh Manager
+## Add the Wazuh Manager IP address to the Wazuh Agent configuration:
 ```
-
-msiexec.exe /i .\wazuh-agent-4.14.7-1.msi /q WAZUH_MANAGER="xxx.xxx.xxx.xxx"
+<client>
+    <server>
+        <address>WAZUH_MANAGER_IP</address>
+    </server>
+</client>
 ```
-Start the Wazuh Agent
+## Replace:
+`WAZUH_MANAGER_IP`
+> with the Wazuh Manager IP address used in the lab.
+> Restart Wazuh Agent
+> Restart-Service -Name Wazuh
+## Start Wazuh Agent
 ```
 Start-Service wazuhsvc
 ```
-Verify the Agent service
+## Verify Wazuh Agent
 ```
 Get-Service wazuhsvc
 ```
-
-
-
