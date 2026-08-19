@@ -31,6 +31,7 @@
 
 </div>
 
+
 ## 🔎 Overview
 
 This project demonstrates an end-to-end **Security Operations Center (SOC) automation workflow** built in an isolated cybersecurity lab environment.
@@ -45,9 +46,7 @@ The workflow demonstrates:
 
 ## ⚡ SOC Automation Flow
 
-<div align="center">
-           
-
+![SOC Automation Workflow](006-shuffle-workflow.png)
 
 
 </div>
