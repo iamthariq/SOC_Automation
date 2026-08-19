@@ -46,7 +46,7 @@ The Wazuh Agent is configured to collect Sysmon Operational events from the Wind
 > Restart Wazuh Agent
 > Restart-Service -Name Wazuh
 ## Evidence
-![Sysmon Wazuh Agent Integration](02-sysmon-wazuh-agent.png)
+![Sysmon Wazuh Agent Integration](sysmon-agent config.png)
 
 # 03. Wazuh Manager → Shuffle SOAR
 
