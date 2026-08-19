@@ -50,49 +50,6 @@ The workflow demonstrates:
 ![SOC Automation Workflow](06-shuffle-workflow.png)
 
 
-```text
-┌──────────────────────┐
-│   Windows Endpoints  │
-│  Windows 11 / AD DC  │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│        Sysmon        │
-│ Endpoint Telemetry   │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│     Wazuh Agent      │
-│   Event Collection   │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│    Wazuh Manager     │
-│   SIEM + Detection   │
-└──────────┬───────────┘
-           │
-         Webhook
-           │
-           ▼
-┌──────────────────────┐
-│     Shuffle SOAR     │
-│ Workflow Automation  │
-└───────┬──────┬───────┘
-        │      │
-        ▼      ▼
-┌───────────┐ ┌──────────────┐
-│ VirusTotal│ │   TheHive    │
-│ Enrichment│ │  Case Mgmt   │
-└───────────┘ └──────────────┘
-             │
-             ▼
-┌──────────────────────┐
-│   Gmail Notification │
-└──────────────────────┘
-```
 </div>
 
 
