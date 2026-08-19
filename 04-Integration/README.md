@@ -28,7 +28,7 @@ WAZUH_MANAGER_IP
 > Restart-Service -Name Wazuh
 
 ## Evidence
-![Wazuh Agent Manager Integration](02-wazuh-agent-manager.png)
+![Wazuh Agent Manager Integration](01-wazuh-agent-manager.png)
 
 # 02. Sysmon → Wazuh Agent
 
@@ -46,7 +46,7 @@ The Wazuh Agent is configured to collect Sysmon Operational events from the Wind
 > Restart Wazuh Agent
 > Restart-Service -Name Wazuh
 ## Evidence
-![Sysmon Wazuh Agent Integration](01-sysmon-wazuh-agent.png)
+![Sysmon Wazuh Agent Integration](02-sysmon-wazuh-agent.png)
 
 # 03. Wazuh Manager → Shuffle SOAR
 
@@ -97,7 +97,7 @@ sudo /var/ossec/bin/wazuh-logtest
 sudo systemctl restart wazuh-manager
 ```
 ## Evidence
-![Wazuh Custom Mimikatz Detection](04-wazuh-custom-mimikatz.png)
+![Wazuh Custom Mimikatz Detection](06-wazuh-custom-mimikatz.png)
 
 # 05. Shuffle SOAR → VirusTotal
 
