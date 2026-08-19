@@ -47,7 +47,7 @@ The workflow demonstrates:
 
 <div align="center">
            
-![SOC Automation Workflow](06-shuffle-workflow.png)
+
 
 
 </div>
